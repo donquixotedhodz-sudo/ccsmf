@@ -54,12 +54,16 @@ if ($status !== 'approved') {
       html, body { background: #fff; }
     }
   </style>
+  <link rel="icon" href="<?= htmlspecialchars(url_for('/image/image.png')) ?>" type="image/png" />
   <meta name="robots" content="noindex" />
 </head>
 <body class="bg-slate-50">
   <div class="max-w-2xl mx-auto my-8 bg-white rounded-lg border shadow-sm">
     <div class="flex items-center justify-between px-6 py-4 border-b no-print">
-      <h1 class="text-lg font-semibold">Acknowledgement Receipt</h1>
+      <div class="flex items-center gap-2">
+        <img src="<?= htmlspecialchars(url_for('/image/image.png')) ?>" alt="Clarendon College Logo" class="h-8 w-8 object-contain" />
+        <h1 class="text-lg font-semibold">Acknowledgement Receipt</h1>
+      </div>
       <div class="flex items-center gap-2">
         <button onclick="window.print()" class="inline-flex items-center gap-1 rounded bg-emerald-600 text-white px-3 py-2 text-sm hover:bg-emerald-700" title="Download PDF">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true">

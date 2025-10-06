@@ -27,11 +27,15 @@ $userTotalPaid = (float)($userMetrics['user_total'] ?? 0);
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Student Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="<?= htmlspecialchars(url_for('/image/image.png')) ?>" type="image/png" />
 </head>
 <body class="min-h-screen bg-slate-50">
   <header class="bg-emerald-600 text-white">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <h1 class="text-lg font-semibold">Student Dashboard</h1>
+      <div class="flex items-center gap-2">
+        <img src="<?= htmlspecialchars(url_for('/image/image.png')) ?>" alt="Clarendon College Logo" class="h-8 w-8 object-contain" />
+        <h1 class="text-lg font-semibold">Student Dashboard</h1>
+      </div>
       <div class="text-sm">Signed in as <?= htmlspecialchars($currentUser['name']) ?> (<?= htmlspecialchars($currentUser['email']) ?>)</div>
     </div>
   </header>

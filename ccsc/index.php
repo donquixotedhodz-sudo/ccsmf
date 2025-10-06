@@ -69,11 +69,15 @@ foreach ($days as $set) { $activeUserData[] = count($set); }
   <title>CCSC Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="icon" href="<?= htmlspecialchars(url_for('/image/image.png')) ?>" type="image/png" />
 </head>
 <body class="min-h-screen bg-slate-50 overflow-y-scroll">
   <header class="bg-blue-600 text-white">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <h1 class="text-lg font-semibold">CCSC Dashboard</h1>
+      <div class="flex items-center gap-2">
+        <img src="<?= htmlspecialchars(url_for('/image/image.png')) ?>" alt="Clarendon College Logo" class="h-8 w-8 object-contain" />
+        <h1 class="text-lg font-semibold">CCSC Dashboard</h1>
+      </div>
       <div class="text-sm">Signed in as <?= htmlspecialchars($currentUser['name']) ?> (<?= htmlspecialchars($currentUser['email']) ?>)</div>
     </div>
   </header>
