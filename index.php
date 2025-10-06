@@ -14,8 +14,7 @@ require_once __DIR__ . '/includes/url.php';
 </head>
 <body class="min-h-screen bg-gray-100 flex items-center justify-center">
   <div class="w-full max-w-md bg-white shadow-lg rounded-lg p-6">
-    <!-- <img src="<?= htmlspecialchars(url_for('/image/logo.png')) ?>" alt="Clarendon College Logo" class="mx-auto mb-4 h-20 w-20 object-contain" /> -->
-     <img src="<?= htmlspecialchars(url_for('/image/clarc.png')) ?>" alt="Clarendon College Logo" class="mx-auto mb-4 h-20 w-20 object-contain" />
+     <img src="<?= htmlspecialchars(url_for('/image/image.png')) ?>" alt="Clarendon College Logo" class="mx-auto mb-4 h-20 w-20 object-contain" />
     <h1 class="text-2xl font-semibold text-center mb-2">Student Mutual Fund Payment System</h1>
     <p class="text-center text-gray-600 mb-6">Transparency System for Student Mutual Funds</p>
 
